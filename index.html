@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Chatbot</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+
+    #chat-toggle {
+      position: fixed; bottom: 20px; right: 20px;
+      width: 60px; height: 60px;
+      background: #007bff; color: white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 24px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    #chatbox {
+      display: none;
+      position: fixed; bottom: 90px; right: 20px;
+      width: 320px; height: 420px;
+      background: white; border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      flex-direction: column; overflow: hidden;
+    }
+
+    #header {
+      background: #007bff; color: white;
+      padding: 10px; font-weight: bold;
+    }
+
+    #messages {
+      flex: 1; padding: 10px;
+      overflow-y: auto;
+    }
+
+    .msg {
+      margin: 6px 0; padding: 8px;
+      border-radius: 6px; max-width: 80%;
+      font-size: 14px;
+    }
+
+    .user {
+      background: #007bff;
+      color: white;
+      margin-left: auto;
+    }
+
+    .bot {
+      background: #eee;
+    }
+
+    #inputArea {
+      display: flex;
+      border-top: 1px solid #ccc;
+    }
+
+    input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="chat-toggle" onclick="toggleChat()">💬</div>
+
+<div id="chatbox">
+  <div id="header">Asystent TechZone</div>
+
+  <div id="messages"></div>
+
+  <div id="inputArea">
+    <input id="input" placeholder="Napisz wiadomość..." />
+    <button onclick="sendMessage()">Wyślij</button>
+  </div>
+</div>
+
+<script>
+const WEBHOOK_URL = "https://hook.eu1.make.com/vg36u43x1gj1quaotymzo63depyjqtl3";
+
+function toggleChat() {
+  const chat = document.getElementById("chatbox");
+  chat.style.display = chat.style.display === "flex" ? "none" : "flex";
+}
+
+async function sendMessage() {
+  console.log("WEBHOOK:", WEBHOOK_URL);
+  const input = document.getElementById("input");
+  const message = input.value.trim();
+
+  if (!message) return;
+
+  addMessage(message, "user");
+  input.value = "";
+
+  const loader = addMessage("Bot pisze...", "bot");
+
+  try {
+    const response = await fetch(WEBHOOK_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ message: message })
+    });
+
+    const data = await response.json();
+
+    loader.innerText = data.reply || "Brak odpowiedzi.";
+  } catch (error) {
+  console.error("ERROR:", error);
+  loader.innerText = "Błąd połączenia.";
+  }
+}
+
+function addMessage(text, type) {
+  const msg = document.createElement("div");
+  msg.className = "msg " + type;
+  msg.innerText = text;
+
+  const messages = document.getElementById("messages");
+  messages.appendChild(msg);
+  messages.scrollTop = messages.scrollHeight;
+
+  return msg;
+}
+
+document.getElementById("input").addEventListener("keypress", function(e) {
+  if (e.key === "Enter") sendMessage();
+});
+</script>
+
+</body>
+</html>
