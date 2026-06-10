@@ -12,19 +12,19 @@ Chatbot AI odpowiadający użytkownikowi na podstawie bazy wiedzy w wymyślonym 
 - GitHub Pages
 
 # Architektura rozwiązania
-Użytkownik
-↓
-Chatbot
-↓
-Webhook (Make)
-↓
-Google Docs (Baza wiedzy)
-↓
-OpenAI API
-↓
-Odpowiedź AI
-↓
-Użytkownik
+[Użytkownik]
+      →
+[Chatbot]
+      →
+[Webhook (Make)]
+      →
+[Google Docs (Baza wiedzy)]
+      →
+[OpenAI API]
+      →
+[Odpowiedź AI]
+      →
+[Użytkownik]
 
 # Funkcje
 - odpowiedzi AI,
