@@ -1,7 +1,7 @@
 # AI Chatbot Techzone
 
 ## Opis projektu
-Chatbot AI odpowiadający użytkownikowi na podstawie bazy wiedzy w wymyślonym sklepie internetowym.
+Chatbot AI odpowiadający na pytania klientów sklepu internetowego na podstawie dedykowanej bazy wiedzy. Projekt prezentuje wykorzystanie OpenAI API oraz workflow w Make do automatyzacji obsługi klienta.
 
 ## Problem biznesowy
 
