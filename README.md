@@ -45,23 +45,23 @@ Użytkownik
 ## Przykładowe działanie
 ### Rozmowa z chatbotem
 
-![Rozmowa z chatbotem](Chatbot-%20rozmowa%20na%20chacie.png)
+![Rozmowa z chatbotem](chatbot-demo.png)
 
 
 ### Workflow w Make
 
 
-![Workflow](Chatbot-%20scenariusz%20w%20Make.png)
+![Workflow](make-workflow.png)
 
 
 ### Baza wiedzy
 
-![Baza wiedzy](Chatbot-%20baza%20wiedzy.png)
+![Baza wiedzy](knowledge-base.png)
 
 
 ### Fragment promptu systemowego
 
-![Prompt](Chatbot-%20prompt.png)
+![Prompt](system-prompt.png)
 
 ## Przykładowe pytanie i odpowiedź
 ### Pytanie użytkownika
