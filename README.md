@@ -45,7 +45,7 @@ Użytkownik
 ## Przykładowe działanie
 ### Rozmowa z chatbotem
 
-![Rozmowa z chatbotem](Chatbot-%20rozmowa%20na%20%20chacie.png)
+![Rozmowa z chatbotem](Chatbot-%20rozmowa%20na%20chacie.png)
 
 
 ### Workflow w Make
