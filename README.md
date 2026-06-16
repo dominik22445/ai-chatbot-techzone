@@ -3,6 +3,14 @@
 # Opis projektu
 Chatbot AI odpowiadający użytkownikowi na podstawie bazy wiedzy w wymyślonym sklepie internetowym.
 
+# Problem biznesowy
+
+Wiele sklepów internetowych otrzymuje powtarzalne pytania dotyczące kosztów dostawy, zwrotów, czasu realizacji zamówień czy dostępnych metod płatności.
+
+Ręczne odpowiadanie na każde zapytanie klienta jest czasochłonne i utrudnia skalowanie obsługi klienta.
+
+Projekt prezentuje wykorzystanie sztucznej inteligencji do automatycznego odpowiadania na najczęściej zadawane pytania klientów na podstawie bazy wiedzy, co pozwala skrócić czas obsługi oraz zapewnić spójność udzielanych odpowiedzi.
+
 # Technologie
 - Make
 - OpenAI API
@@ -27,11 +35,47 @@ Odpowiedź AI
 Użytkownik
 
 # Funkcje
-- odpowiedzi AI,
-- integracja webhook,
-- baza wiedzy,
-- historia rozmowy,
-- komunikacja w czasie rzeczywistym.
+- odpowiadanie na pytania klientów na podstawie bazy wiedzy,
+- wykorzystanie Google Docs jako źródła wiedzy dla modelu AI,
+- integracja OpenAI API z aplikacją webową,
+- komunikacja w czasie rzeczywistym za pomocą webhooków,
+- ograniczenie generowania odpowiedzi spoza dostępnej wiedzy,
+- integracja frontendu HTML/JavaScript z workflow AI w Make.
+
+# Przykładowe działanie
+Rozmowa z chatbotem
+
+
+
+
+Workflow w Make
+
+
+
+
+Baza wiedzy
+
+
+
+
+Fragment promptu systemowego
+
+# Przykładowe pytanie i odpowiedź
+Pytanie użytkownika
+
+Jakie są koszty dostawy?
+
+Odpowiedź chatbota
+
+Koszt dostawy kurierskiej wynosi 15 zł. Darmowa dostawa obowiązuje dla zamówień powyżej 200 zł.
+
+# Ograniczenia
+- chatbot odpowiada wyłącznie na podstawie informacji znajdujących się w bazie wiedzy,
+- nie posiada dostępu do rzeczywistych danych klientów,
+- nie obsługuje płatności ani składania zamówień,
+- jakość odpowiedzi zależy od jakości i kompletności bazy wiedzy,
+- nie analizuje załączników ani plików przesyłanych przez użytkownika,
+- projekt został przygotowany jako demonstracja wykorzystania AI w obsłudze klienta sklepu internetowego.
 
 # Czego nauczyłem się podczas realizacji projektu
 
