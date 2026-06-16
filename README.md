@@ -45,20 +45,23 @@ Użytkownik
 # Przykładowe działanie
 Rozmowa z chatbotem
 
-
+![Rozmowa z chatbotem](Chatbot-%20rozmowa%20na%20chacie.png)
 
 
 Workflow w Make
 
 
+![Workflow](Chatbot-%20scenariusz%20w%20Make.png)
 
 
 Baza wiedzy
 
-
+![Baza wiedzy](Chatbot-%20baza%20wiedzy.png)
 
 
 Fragment promptu systemowego
+
+![Prompt](Chatbot-%20prompt.png)
 
 # Przykładowe pytanie i odpowiedź
 Pytanie użytkownika
@@ -67,7 +70,7 @@ Jakie są koszty dostawy?
 
 Odpowiedź chatbota
 
-Koszt dostawy kurierskiej wynosi 15 zł. Darmowa dostawa obowiązuje dla zamówień powyżej 200 zł.
+Dostawa kurierem kosztuje 15 zł, paczkomat 12 zł, a ekspresowa wysyłka 20 zł. Przy zamówieniach powyżej 200 zł wysyłka jest darmowa.
 
 # Ograniczenia
 - chatbot odpowiada wyłącznie na podstawie informacji znajdujących się w bazie wiedzy,
