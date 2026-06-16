@@ -1,9 +1,9 @@
 # AI Chatbot Techzone
 
-# Opis projektu
+## Opis projektu
 Chatbot AI odpowiadający użytkownikowi na podstawie bazy wiedzy w wymyślonym sklepie internetowym.
 
-# Problem biznesowy
+## Problem biznesowy
 
 Wiele sklepów internetowych otrzymuje powtarzalne pytania dotyczące kosztów dostawy, zwrotów, czasu realizacji zamówień czy dostępnych metod płatności.
 
@@ -11,7 +11,7 @@ Ręczne odpowiadanie na każde zapytanie klienta jest czasochłonne i utrudnia s
 
 Projekt prezentuje wykorzystanie sztucznej inteligencji do automatycznego odpowiadania na najczęściej zadawane pytania klientów na podstawie bazy wiedzy, co pozwala skrócić czas obsługi oraz zapewnić spójność udzielanych odpowiedzi.
 
-# Technologie
+## Technologie
 - Make
 - OpenAI API
 - HTML
@@ -19,7 +19,7 @@ Projekt prezentuje wykorzystanie sztucznej inteligencji do automatycznego odpowi
 - Webhook
 - GitHub Pages
 
-# Architektura rozwiązania
+## Architektura rozwiązania
 Użytkownik
       →
 Chatbot
@@ -34,7 +34,7 @@ Odpowiedź AI
       →
 Użytkownik
 
-# Funkcje
+## Funkcje
 - odpowiadanie na pytania klientów na podstawie bazy wiedzy,
 - wykorzystanie Google Docs jako źródła wiedzy dla modelu AI,
 - integracja OpenAI API z aplikacją webową,
@@ -42,33 +42,33 @@ Użytkownik
 - ograniczenie generowania odpowiedzi spoza dostępnej wiedzy,
 - integracja frontendu HTML/JavaScript z workflow AI w Make.
 
-# Przykładowe działanie
-Rozmowa z chatbotem
+## Przykładowe działanie
+### Rozmowa z chatbotem
 
-![Rozmowa z chatbotem](Chatbot-%20rozmowa%20na%20chacie.png)
+![Rozmowa z chatbotem](Chatbot-%20rozmowa%20na%20%20chacie.png)
 
 
-Workflow w Make
+### Workflow w Make
 
 
 ![Workflow](Chatbot-%20scenariusz%20w%20Make.png)
 
 
-Baza wiedzy
+### Baza wiedzy
 
 ![Baza wiedzy](Chatbot-%20baza%20wiedzy.png)
 
 
-Fragment promptu systemowego
+### Fragment promptu systemowego
 
 ![Prompt](Chatbot-%20prompt.png)
 
-# Przykładowe pytanie i odpowiedź
-Pytanie użytkownika
+## Przykładowe pytanie i odpowiedź
+### Pytanie użytkownika
 
 Jakie są koszty dostawy?
 
-Odpowiedź chatbota
+### Odpowiedź chatbota
 
 Dostawa kurierem kosztuje 15 zł, paczkomat 12 zł, a ekspresowa wysyłka 20 zł. Przy zamówieniach powyżej 200 zł wysyłka jest darmowa.
 
