@@ -51,12 +51,14 @@ Użytkownik
 ### Workflow w Make
 
 
-![Workflow](make-workflow.png)
+<img width="912" height="268" alt="image" src="https://github.com/user-attachments/assets/0c2fee43-1bea-4479-add7-2104b993fc80" />
 
 
-### Baza wiedzy
 
-![Baza wiedzy](knowledge-base.png)
+### Fragment bazy wiedzy
+
+<img width="810" height="824" alt="image" src="https://github.com/user-attachments/assets/c1e2e613-435e-455c-b63e-12eb6cdfd612" />
+
 
 
 ### Fragment promptu systemowego
