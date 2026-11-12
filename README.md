@@ -65,14 +65,6 @@ Użytkownik
 
 ![Prompt](system-prompt.png)
 
-## Przykładowe pytanie i odpowiedź
-### Pytanie użytkownika
-
-Jakie są koszty dostawy?
-
-### Odpowiedź chatbota
-
-Dostawa kurierem kosztuje 15 zł, paczkomat 12 zł, a ekspresowa wysyłka 20 zł. Przy zamówieniach powyżej 200 zł wysyłka jest darmowa.
 
 # Ograniczenia
 - chatbot odpowiada wyłącznie na podstawie informacji znajdujących się w bazie wiedzy,
